@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherApi app</title>
+  <link rel="icon" href="imgs/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container-fluid p-0 vh-100">
+    <div class="bg-1E202B py-1">
+      <header class="text-white my-3 d-flex w-75 m-auto justify-content-between  align-items-center">
+        <div class="d-flex align-items-center container w-50">
+          <figure class="logo m-0">
+            <img src="imgs/logo.png" class="" alt="logo">
+          </figure>
+          <figcaption class="ms-3">
+            <h6>Weather</h6>
+            <p class="m-0">tagline goes here</p>
+          </figcaption>
+        </div>
+        <nav class="w-50 ">
+          <ul class="list-unstyled m-0 p-0 d-flex justify-content-end">
+            <li><a href="#" class="activePage">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Live Cameras</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="middle py-5 bg-1E202B">
+      <form class="search">
+        <input type="text" class="text-muted" placeholder="Find your location...">
+        <button class="btn-primary btn">Find</button>
+      </form>
+      <div class="weatherDetails">
+
+        <div class="row p-0 m-0">
+          <div class="col-md-4 m-0 p-0">
+            <div class="text-white today">
+              <div class="forecast-head d-flex justify-content-between">
+                <span class="day"></span>
+                <span class="date"></span>
+              </div>
+              <div class="forecast-details">
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <div class="fs-6">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span class="ms-2 location"></span>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div>
+                      <p class="currentTemperature"><span></span>°C</p>
+                    </div>
+                  </div>
+                  <div class="col-4 d-flex align-items-center">
+                    <div class="currentImg">
+                      <img src="">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <div class="weatherStatusWord text-primary fs-5">
+                        Clear
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row text-muted mt-5 fs-6">
+                    <div class="col-3">
+                      <div>
+                        <i class="fa-solid fa-umbrella"></i>
+                        <span class="raining ">20%</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div>
+                        <i class="fa-solid fa-wind"></i>
+                        <span class="windSpeed"></span>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div>
+                        <i class="fa-solid fa-compass"></i>
+                        <span class="windDirection ms-2">East</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 m-0 p-0 tomorrow">
+            <div class="text-white text-center ">
+              <div class="forecast-head d-flex justify-content-between">
+                <span class="day m-auto"></span>
+              </div>
+              <div class="forecast-details h-100">
+                <div class="row">
+                  <div class="col-12 mt-3 d-flex align-items-center justify-content-center">
+                    <img src="">
+                  </div>
+                  <div class="col-12 ">
+                    <div class="maxTemperature">
+                      <span class="temp"></span>
+                      <span class="degree">°C</span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="minTemperature">
+                      <span class="temp"></span>
+                      <span class="degree">°C</span>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <span class="weatherStatus text-primary"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 m-0 p-0 afterTomorrow">
+            <div class="text-white text-center">
+              <div class="forecast-head d-flex justify-content-between">
+                <span class="day m-auto"></span>
+              </div>
+              <div class="forecast-details">
+                <div class="row">
+                  <div class="col-12 mt-3 d-flex align-items-center justify-content-center">
+                    <img src="">
+                  </div>
+                  <div class="col-12 ">
+                    <div class="maxTemperature">
+                      <span class="temp"></span>
+                      <span class="degree">°C</span>
+                    </div>
+
+                  </div>
+                  <div class="col-12">
+                    <div class="minTemperature">
+                      <span class="temp"></span>
+                      <span class="degree">°C</span>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <span class="weatherStatus text-primary"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="pt-4">
+      <div class="d-flex w-75 m-auto pt-5 my-4">
+        <form class="subscribe me-5">
+          <input type="text" placeholder="Enter your Email to subscribe ....">
+          <button class="btn-primary btn">Subscribe</button>
+          <p class="text-muted mt-3 ms-2">Copyright 2022 Company name. Designed by Themezy. All rights reserved</p>
+        </form>
+        <div class="mx-5 social d-flex fs-5">
+          <div class="circle">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="circle">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="circle">
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          </div>
+          <div class="circle">
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+  <!--  Javascript  -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
