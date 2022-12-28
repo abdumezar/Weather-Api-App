@@ -28,7 +28,7 @@ document.querySelector(".search button").addEventListener("click", function () {
 });
 
 function StartWeatherApi(searchWord) {
-  MainApi.open("POST", `https://api.weatherapi.com/v1/forecast.json?key=ef9e36b8db5d4948a95185254221110&q=${searchWord}&days=3&aqi=no&alerts=no`);
+  MainApi.open("POST", `https://api.weatherapi.com/v1/forecast.json?key=203041c514c0438fae8134055222812&q=${searchWord}&days=3&aqi=no&alerts=no`);
   if (searchWord.length > 2) {
     MainApi.send();
     MainApi.addEventListener("readystatechange", function () {
